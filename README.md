@@ -1,5 +1,5 @@
 # pds_assignment1
-Assignment1 for CS60013 : Programming &amp; Data Structures. Due on **September 1, 2022 at 11:59 PM**
+Assignment1 for CS60013 : Programming &amp; Data Structures. Due on **September 1, 2022 at 23:59:59 PM**
 
 ---
 
