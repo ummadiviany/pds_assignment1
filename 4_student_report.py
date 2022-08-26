@@ -15,9 +15,12 @@ def get_student_info():
     
     return name, marks
 
-def make_student_report(name : str, roll_no : str, marks : list) -> str:
-    # Task Write code to calculate the average of the marks
-    # Return the report as a string
+def make_student_report(name : str, roll_no : str, grades : list) -> str:
+
+    # Print the student report in the following format
+        # 1. Student Name: <name>
+        # 2. Roll No: <roll_no>
+        # 3. GPA : <gpa>
     
     
     return 
