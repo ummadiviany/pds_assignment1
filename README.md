@@ -4,7 +4,7 @@ Assignment1 for CS60013 : Programming &amp; Data Structures. Due on **September 
 ---
 
 ## Tasks
-This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are r 
+This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are learning new concepts. You are expected to learn them and use them to solve the tasks.
 ### Task 1 : Cubeth Root
     1. In this task, you have to complete the function `cube_root` in `1_cubeth_root.py` file.
     2. Conditions:
@@ -156,10 +156,19 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
 ---
 ## Submission Instructions
 ### How to Submit
-1. Once you have ran all the test and are satisfied with the results, commit your changes using the following command:
+1. Once you have ran all the test and are satisfied with the results, commit your changes using the following commands in sequence:
+    
+    To add all the files to the staging area:
     ```bash
     git add .
+    ```
+
+    To finalize the commit:
+    ```bash
     git commit -m "your_commit_message"
+    ```
+    To push the changes to your repository:
+    ```bash
     git push
     ```
      or use the VS Code GUI to commit your changes and push them to the remote repository.
