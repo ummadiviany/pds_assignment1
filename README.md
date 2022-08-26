@@ -154,7 +154,7 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
     and similarly for other tasks. Check the **/tests** folder for associated test files.
 
 ---
-## Submission
+## Submission Instructions
 ### How to Submit
 1. Once you have ran all the test and are satisfied with the results, commit your changes using the following command:
     ```bash
@@ -177,4 +177,7 @@ This assignment is auto-graded. Please make sure that you have completed all the
 2. [Unofficial Python Tutorial](https://www.programiz.com/python-programming)
 
 
+---
+Assignment created by [**Vinay**](https://ummadiviany.github.io/) and approved by [**Prof Subhamoy Mandal**](https://sites.google.com/site/smandalbiomed/home).
 
+## All the best!
