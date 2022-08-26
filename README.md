@@ -4,9 +4,9 @@ Assignment1 for CS60013 : Programming &amp; Data Structures. Due on **September 
 ---
 
 ## Tasks
-This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are learning new concepts. You are expected to learn them and use them to solve the tasks.
+This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are learning new concepts. You are expected to learn them and use them to solve the tasks. All the tasks are in the **/tasks** directory.
 ### Task 1 : Cubeth Root
-    1. In this task, you have to complete the function `cube_root` in `1_cubeth_root.py` file.
+    1. In this task, you have to complete the function `cube_root` in `cubeth_root.py` file.
     2. Conditions:
        1. Do not use any inbuilt functions like `pow`, `math.pow`, `math.cbrt`, etc.
        2. Only `**` operator is allowed.
@@ -21,7 +21,7 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
 
 
 ### Task 2 : Pattern Printing
-    1. Complete the function `print_pattern` in `2_pattern_printer.py` file. 
+    1. Complete the function `print_pattern` in `pattern_printer.py` file. 
     2. Input constraints:
        1. `n` is a positive integer and less than 27.
     3. Examples:
@@ -58,7 +58,7 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
                 ------------------j------------------
 
 ### Task 3 - Prime Sum
-    1. Complete the functions `prime_sum` and `is_prime` in `3_prime_sum.py` file.
+    1. Complete the functions `get_prime_sum` and `is_prime` in `prime_sum.py` file.
     2. Prime Number : A number is prime if it is divisible by 1 and itself only. These are some examples of prime numbers {2, 3, 5, 7, 9, 11 ...}. All prime numbers are odd except 2.
     3. Function `is_prime` :
        1. This function takes a number `n` as input and returns `True` if `n` is prime and `False` otherwise.
