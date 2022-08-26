@@ -147,20 +147,34 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
     ```bash
     code .
     ```
-4. Once you have completed each task, try to run the test cases using the following command:
+4. Once you have completed each task, try to run the test cases. For example if you have completed task 1 **cubeth_root**, run the following command:
     ```bash
-    python -m unittest
+    python -m unittest tests/test_cubeth_root.py
     ```
+    and similarly for other tasks. Check the **/tests** folder for associated test files.
 
 ---
 ## Submission
-1. 
+### How to Submit
+1. Once you have ran all the test and are satisfied with the results, commit your changes using the following command:
+    ```bash
+    git add .
+    git commit -m "your_commit_message"
+    git push
+    ```
+     or use the VS Code GUI to commit your changes and push them to the remote repository.
+
+### Deadline
+This assignment is due on **September 1, 2022 at 23:59:59**.
 
 ---
 ## Grading
+This assignment is auto-graded. Please make sure that you have completed all the tasks and have passed all the test cases. The final score will be calculated based on the number of test cases passed. 
 
 ---
 ## Resources
+1. [Python Documentation](https://docs.python.org/3/)
+2. [Unofficial Python Tutorial](https://www.programiz.com/python-programming)
 
 
 
