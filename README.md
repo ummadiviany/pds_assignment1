@@ -1,9 +1,9 @@
 # pds_assignment1
-Assignment1 for CS60013 : Programming &amp; Data Structures. Due on **September 1, 2022 at 23:59:59 PM**
+Assignment1 for CS60013 : Programming & Data Structures. Due on **September 5, 2022 at 23:59:59 PM**
 
 ---
 
-## Tasks
+## Tasks 
 This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are learning new concepts. You are expected to learn them and use them to solve the tasks. All the tasks are in the **/tasks** directory.
 ### Task 1 : Cubeth Root
     1. In this task, you have to complete the function `cube_root` in `cubeth_root.py` file.
@@ -79,8 +79,9 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
     2. The student report should be generated in the following format:
         * Name : <student_name>
         * Roll Number : <student_roll_number>
+        * Status : <student_result_status>
         * GPA : <student_grade_point_average>
-    3. You can assume that the student name and roll number are strings and the GPA is a floating point number.
+    3. You can assume that the student name roll number and status are strings, and the GPA is a floating point number.
     4. GPA is calculated as the sum of the grades divided by the number of subjects.
     5. Conditions:
        1. Passing grade for each subject is  greater than 5.
