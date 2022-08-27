@@ -7,9 +7,6 @@ from tasks.cubeth_root import find_cube_root
 class TestCubeRoot(unittest.TestCase):
     def test_cube_root(self):
         self.assertEqual(find_cube_root(27), 3)
-    
-    def test_cube_root_2(self):
-        self.assertEqual(find_cube_root(125), 5)
         
     def test_cube_root_3(self):
         self.assertEqual(find_cube_root(8), 2)
