@@ -12,42 +12,26 @@ def is_prime(num : int) -> bool:
     """
     This function checks if a number is prime or not
     Input : num
-    Output : True if num is prime else False
+    Output : returns True if num is prime else returns False
+    
+    Additional Notes: It is not necessary to write a function to find the prime numbers.
+                        You can also directly do it in the get_prime_sum function.
     """
     # Write your code here
     
-    flag = False
-
-    # prime numbers are greater than 1
-    if num > 1:
-        # check for factors
-        for i in range(2, num):
-            if (num % i) == 0:
-                # if factor is found, set flag to True
-                flag = True
-                # break out of loop
-                break
-    else:
-        return False
-    # check if flag is True
-    if flag:
-        return False
-    else:
-        return True
+    return
+    
         
 
 def get_prime_sum(n : int) -> int:
     """
     This function returns the sum of all the prime numbers less than n
     Input : n
-    Output : sum of all the prime numbers less than n
+    Output : Returns the sum of all the prime numbers less than n
     """
     # Write your code here
 
         
-    sum = 0
-    for i in range(n):
-        if is_prime(i):
-            sum += i
     
-    return sum
+    
+    return 

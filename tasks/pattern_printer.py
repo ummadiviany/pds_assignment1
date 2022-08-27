@@ -13,7 +13,8 @@ def print_pattern(n : int) -> None:
     """
     This function prints the following pattern
     Input : n
-    Output : returns the pattern as a string
+    Output : Your function should print the pattern as described below. 
+             Do not return anything.
     """
     # Write your code here
     

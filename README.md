@@ -7,13 +7,14 @@ Assignment1 for CS60013 : Programming & Data Structures. Due on **September 5, 2
 This assignment is divided into 4 tasks. All the tasks are detailed below. All the below tasks use concepts discussed in theory and tutorial classes. You are expected to connect the dots to solve these tasks. In some tasks you are learning new concepts. You are expected to learn them and use them to solve the tasks. All the tasks are in the **/tasks** directory.
 ### Task 1 : Cubeth Root
     1. In this task, you have to complete the function `cube_root` in `cubeth_root.py` file.
-    2. Conditions:
+    2. Your function should return the cube root of the given number.
+    3. Conditions:
        1. Do not use any inbuilt functions like `pow`, `math.pow`, `math.cbrt`, etc.
        2. Only `**` operator is allowed.
-    3. Input constraints:
+    4. Input constraints:
        1. `n` is a positive integer.
        2. `n` is a perfect cube.
-    4. Example:
+    5. Example:
        1. `cube_root(27)` should return `3`.
        2. `cube_root(125)` should return `5`.
        3. `cube_root(729)` should return `9`.
@@ -22,9 +23,10 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
 
 ### Task 2 : Pattern Printing
     1. Complete the function `print_pattern` in `pattern_printer.py` file. 
-    2. Input constraints:
+    2. Your function should print the pattern as described below. Do not return anything.
+    3. Input constraints:
        1. `n` is a positive integer and less than 27.
-    3. Examples:
+    4. Examples:
        1. Example 1:
             - Input : n = 3
             - Output :
@@ -34,7 +36,7 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
                 --c-b-c--
                 ----c----
         
-        2. Example 2:
+        1. Example 2:
            - Input : n = 10
            - Output :
                 ------------------j------------------
@@ -64,11 +66,14 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
        1. This function takes a number `n` as input and returns `True` if `n` is prime and `False` otherwise.
        2. Input constraints:
           1. `n` is a positive integer.
-    4. Function `prime_sum` :
+    4. Function `get_prime_sum` :
        1. This function takes a number `n` as input and returns the sum of all prime numbers less than `n`.
-       2. Input constraints:
+       2. Return the sum of all prime numbers less than `n` and do not print anything.
+       3. Only `get_prime_sum` function is called in the test code.
+       4. If you wish you can scrap the `is_prime` function and implement it in the `get_prime_sum` function itself.
+       5. Input constraints:
           1. `n` is a positive integer.
-       3. Examples:
+       6. Examples:
           1. `prime_sum(10)` should return `17`.
                 - Sum of all prime numbers less than 10 is 2 + 3 + 5 + 7 = 17.
           2. `prime_sum(20)` should return `77`.

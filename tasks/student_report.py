@@ -10,14 +10,19 @@
 
 
 def make_student_report(name : str, roll_no : str, grades : list) -> str:
-
-    # Print the student report in the following format
-        # Student Name: <name>
-        # Roll No: <roll_no>
-        # Status : <status>
-        # GPA: <gpa>
     
-
+    """
+    Input : name, roll_no, grades
+    Output : Prints the student report in the following format
+                # Student Name: <name>
+                # Roll No: <roll_no>
+                # Status: <status>
+                # GPA: <gpa>
+                
+    Do not return anything.
+    """
+    
+    # Write your code here
     
 
 

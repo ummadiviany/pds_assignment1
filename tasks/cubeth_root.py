@@ -13,7 +13,7 @@ def find_cube_root(num : int) -> int:
     """
     This function finds the cube root of a number
     Input : num
-    Output : cubeth root of the number
+    Output : Your function should return the cube root of the given number
     """
     # Write your code here
     
