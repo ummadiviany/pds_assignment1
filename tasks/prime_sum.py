@@ -16,7 +16,24 @@ def is_prime(num : int) -> bool:
     """
     # Write your code here
     
+    flag = False
 
+    # prime numbers are greater than 1
+    if num > 1:
+        # check for factors
+        for i in range(2, num):
+            if (num % i) == 0:
+                # if factor is found, set flag to True
+                flag = True
+                # break out of loop
+                break
+    else:
+        return False
+    # check if flag is True
+    if flag:
+        return False
+    else:
+        return True
         
 
 def get_prime_sum(n : int) -> int:
@@ -27,4 +44,10 @@ def get_prime_sum(n : int) -> int:
     """
     # Write your code here
 
+        
+    sum = 0
+    for i in range(n):
+        if is_prime(i):
+            sum += i
     
+    return sum
