@@ -19,7 +19,16 @@ def is_prime(num : int) -> bool:
     """
     # Write your code here
     
-    return
+    c = 0
+    if num > 0:
+        for i in range(1, num + 1):
+            if num % i == 0:
+                c += 1
+
+        if c == 2:
+            return True
+        else:
+            return False
     
         
 
@@ -30,8 +39,19 @@ def get_prime_sum(n : int) -> int:
     Output : Returns the sum of all the prime numbers less than n
     """
     # Write your code here
+    
+    s = 0
+    if n > 1:
+        for i in range(1, n + 1):
+            if is_prime(i) == True:
+                s += i
+        return s
+    else:
+        return print("invalid input")
+    
+    
 
         
     
     
-    return 
+    
