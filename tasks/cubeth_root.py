@@ -16,7 +16,8 @@ def find_cube_root(num : int) -> int:
     Output : Your function should return the cube root of the given number
     """
     # Write your code here
-    
-    return 
+    cube_root=int(num**1/3)
+
+    return cube_root
 
 
