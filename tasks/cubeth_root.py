@@ -17,6 +17,6 @@ def find_cube_root(num : int) -> int:
     """
     # Write your code here
     
-    return 
+    return int(num ** (1./3))
 
 

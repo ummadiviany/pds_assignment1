@@ -18,3 +18,14 @@ def print_pattern(n : int) -> None:
     """
     # Write your code here
     
+    a = n   #Created 'a' variable for my convenience.
+    l = []
+    for i in range(a):
+        d = '-'*(a * 2-(2*(1+i)))+chr(96+a)
+        for j in range(i):
+            d += '-' + chr(96 + a - j - 1)
+        l.append((d+d[-2::-1]))
+    
+    
+    print('\n'.join(l+l[-2::-1]))
+    

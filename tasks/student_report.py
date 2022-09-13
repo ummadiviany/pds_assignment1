@@ -25,4 +25,13 @@ def make_student_report(name : str, roll_no : str, grades : list) -> str:
     # Write your code here
     
 
-
+    print(f"Student Name: {name}")
+    print(f"Roll No: {roll_no}")
+    
+    status = "Pass" if all([True if g>5 else False for g in grades]) else "Fail"
+    gpa = None
+    if status == "Pass":
+        gpa = sum(grades)/len(grades)
+    
+    print(f"Status: {status}")
+    print(f"GPA: {gpa}")
