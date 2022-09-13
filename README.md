@@ -1,5 +1,12 @@
 # pds_assignment1
-Assignment1 for CS60013 : Programming & Data Structures. Due on **September 5, 2022 at 23:59:59 PM**
+Solutions for this assignment are provided in **/tasks** directory itself and also pasted in this README.md file.
+ - [Task 1 Solution](#task-1-solution) 
+ - [Task 2 Solution](#task-2-solution)
+ - [Task 3 Solution](#task-3-solution)
+ - [Task 4 Solution](#task-4-solution) 
+
+
+Assignment1 for CS60013 : Programming & Data Structures. Due on **September 10, 2022 at 23:59**. 
 
 ---
 
@@ -19,8 +26,21 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
        2. `cube_root(125)` should return `5`.
        3. `cube_root(729)` should return `9`.
 
+### Task 1 Solution:
 
+```python
+def find_cube_root(num : int) -> int:
+    """
+    This function finds the cube root of a number
+    Input : num
+    Output : Your function should return the cube root of the given number
+    """
+    # Write your code here
+    
+    return int(num ** (1./3))
 
+```
+    
 ### Task 2 : Pattern Printing
     1. Complete the function `print_pattern` in `pattern_printer.py` file. 
     2. Your function should print the pattern as described below. Do not return anything.
@@ -59,6 +79,28 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
                 ----------------j-i-j----------------
                 ------------------j------------------
 
+### Task 2 Solution:
+```python
+def print_pattern(n : int) -> None:
+    """
+    This function prints the following pattern
+    Input : n
+    Output : Your function should print the pattern as described below. 
+             Do not return anything.
+    """
+    # Write your code here
+    
+    a = n   #Created 'a' variable for my convenience.
+    l = []
+    for i in range(a):
+        d = '-'*(a * 2-(2*(1+i)))+chr(96+a)
+        for j in range(i):
+            d += '-' + chr(96 + a - j - 1)
+        l.append((d+d[-2::-1]))
+        
+    print('\n'.join(l+l[-2::-1]))
+```
+
 ### Task 3 - Prime Sum
     1. Complete the functions `get_prime_sum` and `is_prime` in `prime_sum.py` file.
     2. Prime Number : A number is prime if it is divisible by 1 and itself only. These are some examples of prime numbers {2, 3, 5, 7, 9, 11 ...}. All prime numbers are odd except 2.
@@ -78,6 +120,54 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
                 - Sum of all prime numbers less than 10 is 2 + 3 + 5 + 7 = 17.
           2. `prime_sum(20)` should return `77`.
                 - Sum of all prime numbers less than 20 is 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.
+
+### Task 3 Solution:
+```python
+def is_prime(num : int) -> bool:
+    """
+    This function checks if a number is prime or not
+    Input : num
+    Output : returns True if num is prime else returns False
+    
+    Additional Notes: It is not necessary to write a function to find the prime numbers.
+                        You can also directly do it in the get_prime_sum function.
+    """
+    # Write your code here
+    
+    flag = False
+    # prime numbers are greater than 1
+    if num > 1:
+        # check for factors
+        for i in range(2, num):
+            if (num % i) == 0:
+                # if factor is found, set flag to True
+                flag = True
+                # break out of loop
+                break
+    else:
+        return False
+    # check if flag is True
+    if flag:
+        return False
+    else:
+        return True
+    
+        
+def get_prime_sum(n : int) -> int:
+    """
+    This function returns the sum of all the prime numbers less than n
+    Input : n
+    Output : Returns the sum of all the prime numbers less than n
+    """
+    # Write your code here
+    sum = 0
+    for i in range(n):
+        if is_prime(i):
+            sum += i
+    
+    return sum
+
+```
 
 ### Task 4 - Student Report Card
     1. In this task, a single line student report is to be generated based on the student marks.
@@ -137,6 +227,35 @@ This assignment is divided into 4 tasks. All the tasks are detailed below. All t
                 - Student status is Pass.
                 - GPA is calculated as the sum of the grades divided by the number of subjects.
 
+### Task 4 Solution:
+```python
+def make_student_report(name : str, roll_no : str, grades : list) -> str:
+    
+    """
+    Input : name, roll_no, grades
+    Output : Prints the student report in the following format
+                # Student Name: <name>
+                # Roll No: <roll_no>
+                # Status: <status>
+                # GPA: <gpa>
+                
+    Do not return anything.
+    """
+    
+    # Write your code here
+    
+
+    print(f"Student Name: {name}")
+    print(f"Roll No: {roll_no}")
+    
+    status = "Pass" if all([True if g>5 else False for g in grades]) else "Fail"
+    gpa = None
+    if status == "Pass":
+        gpa = sum(grades)/len(grades)
+    
+    print(f"Status: {status}")
+    print(f"GPA: {gpa}")
+```
 
 ---
 ## Instructions to work on the assignment
